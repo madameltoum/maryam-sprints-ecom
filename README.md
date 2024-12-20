@@ -4,6 +4,9 @@
 
 Refer to tasks below or on project page as needed.
 
+The scope of this project is to design and develop a fully functional e-commerce website using HTML. The website will include multiple pages, product listings, shopping cart functionality, payment integration, and user account management.
+Also, You are required to apply the CSS to all pages to be user-friendly and responsive to mobile screens.
+
 ### Task 1 - Homepage
 - Create the basic structure of the homepage using HTML, including product listings, promotions and navigation links.
 - CSS can be applied to style and format the appearance of the homepage
