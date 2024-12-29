@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles/teststyle.css">
 	<title>E-commerce</title>
 </head>
 <body>
@@ -12,20 +13,24 @@
 		<header>
 			<nav>
 				<ul class="nav-bar">
-					<li><a href="../index.html">Home</a></li>
-					<li><a href="/pages/product-list.html">Products</a></li>
+				  <li><a href="../index.html">Home</a></li>
+				  <li><a href="/pages/product-list.html">Products</a>
+					<!-- Dropdown under Products -->
 					<ul class="dropdown">
-						<li><a href="#">Best Sellers</a></li>
-						<li><a href="#">Our Favourites</a></li>
+					  <li><a href="#">Best Sellers</a></li>
+					  <li><a href="#">Our Favourites</a></li>
 					</ul>
-					<li><a href="#">Profile</a></li>
-						<ul class="dropdown">
-						<li><a href="#">Cart</a></li>
-						<li><a href="#">Addresses</a></li>
-						<li><a href="#">Previous Orders</a></li>
-						</ul>
+				  </li>
+				  <li><a href="pages/user-profile.html">Profile</a>
+					<!-- Dropdown under Profile -->
+					<ul class="dropdown">
+					  <li><a href="pages/shopping-cart.html">Cart</a></li>
+					  <li><a href="pages/address.html">Addresses</a></li>
+					  <li><a href="pages/order-history.html">Previous Orders</a></li>
+					</ul>
+				  </li>
 				</ul>
-			</nav>
+			  </nav>
 		</header>
 
 		<!-- user profile -->
@@ -34,22 +39,24 @@
 
 			<h1>My Profile</h1>
 
-			<div class="profile-picture">
-			  <img src="https://place-hold.it/100" alt="User Profile Picture">
-			</div>
+			<div class="profile-container">
 
-			<div class="profile-details">
-			  	<h2>Profile Information</h2>
-			  	<p><strong>Name:</strong> John Smith</p>
-			  	<p><strong>Email:</strong> email@example.com</p>
-			  	<p><strong>Phone:</strong> (123) 456-7890</p>
-			  	<p><strong>Address:</strong> Sōya Subprefecture, Wakkanai, Hokkaido, Japan 097-0000</p>
-
-				  <div class="btn">
-					<p><a href="#">Edit Profile</a></p>
+				<div class="profile-picture">
+					<img src="https://place-hold.it/100" alt="User Profile Picture">
+				</div>
+				
+				<div class="profile-details">
+					<h2>Profile Information</h2>
+					<p><strong>Name:</strong> John Smith</p>
+					<p><strong>Email:</strong> email@example.com</p>
+					<p><strong>Phone:</strong> (123) 456-7890</p>
+					<p><strong>Address:</strong> Sōya Subprefecture, Wakkanai, Hokkaido, Japan 097-0000</p>
+					
+					<div class="btn">
+						<p><a href="#">Edit Profile</a></p>
+					</div>
 				</div>
 			</div>
-
 		  </section>
 
 		  <hr>
@@ -60,14 +67,14 @@
 				<img src="https://place-hold.it/100" alt="User Profile Picture">
 				<h3>Product Name</h3>
 				<p><strong>Date Purchased:</strong> 12/12/24</p>
-				<p><strong>Rating:</strong> ★★★★☆</p>
+				<p class="rating"><strong>Rating:</strong> ★★★★☆</p>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptate commodi ipsam laborum maxime culpa.</p>
 			</div>
 			<div class="review-card">
 				<img src="https://place-hold.it/100" alt="User Profile Picture">
 				<h3>Product Name</h3>
 				<p><strong>Date Purchased:</strong> 20/08/24</p>
-				<p><strong>Rating:</strong> ★★★☆☆</p>
+				<p class="rating"><strong>Rating:</strong>★★★☆☆</p>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptate commodi ipsam laborum maxime culpa.</p>
 			</div>
 
