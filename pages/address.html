@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>E-commerce</title>
+</head>
+<body>
+	<main>
+<!-- main header + nav links -->
+
+		<header>
+			<nav>
+				<ul class="nav-bar">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="/pages/product-list.html">Products</a></li>
+					<ul class="dropdown">
+						<li><a href="#">Best Sellers</a></li>
+						<li><a href="#">Our Favourites</a></li>
+					</ul>
+					<li><a href="pages/user-profile.html">Profile</a></li>
+						<ul class="dropdown">
+						<li><a href="pages/shopping-cart.html">Cart</a></li>
+						<li><a href="#">Addresses</a></li>
+						<li><a href="#">Previous Orders</a></li>
+						</ul>
+				</ul>
+			</nav>
+		</header>
+
+
+		<section class="saved-address">
+			<h1>Your Saved Addresses</h1>
+			<div class="address-card">
+				<input type="radio" id="address-saved" name="address-used">
+				<h2>Address 1</h2>
+				<p>Home</p>
+				<p>St. Name & ###</p>
+
+				<div class="btn">
+					<p><a href="#">Edit Address</a></p>
+				</div>
+			</div>
+
+			<div class="address-card">
+				<input type="radio" id="address-saved" name="address-used">
+				<h2>Address 2</h2>
+				<p>Home</p>
+				<p>St. Name & ###</p>
+
+				<div class="btn">
+					<p><a href="#">Edit Address</a></p>
+				</div>
+			</div>
+		</section>
+
+		<hr>
+
+		<!-- Address form -->
+
+		<section class="address-form">
+			<h2>Add new Address</h2>
+			<form>
+				<form>
+					<label for="first-name">First name:</label><br>
+					<input type="text" id="first-name" name="first-name" required>
+
+					<label for="last-name">Last name:</label>
+					<input type="text" id="last-name" name="last-name" required><br><br>
+
+					<label for="street">Street</label><br>
+					<input type="text" id="street" name="street" required>
+
+					<label for="apt-number">Apt/House Number</label>
+					<input type="text" id="apt-number" name="apt-number" required><br>
+
+					<label for="prefecture">Prefecture</label><br>
+					<input type="text" id="prefecture" name="prefecture" required>
+
+					<label for="zipcode">Zipcode</label>
+					<input type="text" id="zipcode" name="zipcode" required><br><br>
+
+					<input type="submit" value="Add new address">
+					<input type="reset" value="Reset">
+				  </form>
+			</form>
+		</section>
+
+		<hr>
+		
+		<!-- footer section -->
+			<footer>
+				<p>Quick links</p>
+				<ul>
+					<li>Home</li>
+					<li>Products</li>
+					<li>Best Sellers</li>
+					<li>Favourites</li>
+					<li>Cart</li>
+				</ul>
+				<ul>
+					<li>Profile</li>
+					<li>Addresses</li>
+					<li>Orders</li>
+				</ul>
+			</footer>
+	</main>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>E-commerce</title>
+</head>
+<body>
+	<main>
+<!-- main header + nav links -->
+
+		<header>
+			<nav>
+				<ul class="nav-bar">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="/pages/product-list.html">Products</a></li>
+					<ul class="dropdown">
+						<li><a href="#">Best Sellers</a></li>
+						<li><a href="#">Our Favourites</a></li>
+					</ul>
+					<li><a href="pages/user-profile.html">Profile</a></li>
+						<ul class="dropdown">
+						<li><a href="pages/shopping-cart.html">Cart</a></li>
+						<li><a href="pages/address.html">Addresses</a></li>
+						<li><a href="#">Previous Orders</a></li>
+						</ul>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="user-order">
+			<h1>Order Summary</h1>
+			<h2>Shipping to:</h2>
+
+			<div class="address-card">
+				<h2>Address 1</h2>
+				<p>Home</p>
+				<p>St. Name & ###</p>
+
+				<div class="edit-btn">
+					<p><a href="address.html">Change Address</a></p>
+				</div>
+			</div>
+
+			<div class="payment">
+				<h3>Choose your payment method</h3>
+
+				<div class="payment-method">
+					<input type="radio" id="payment-cash" name="payment-method" value="cash" checked>
+					<label for="payment-cash">Cash on Delivery</label>
+				</div>
+		  
+				<div class="payment-method">
+					<input type="radio" id="payment-paypal" name="payment-method" value="paypal">
+					<label for="payment-paypal">PayPal</label>
+				</div>
+		  
+				<div class="payment-method card-form">
+					<form>
+						<input type="radio" id="payment-credit" name="payment-method" value="credit">
+						<label for="payment-credit">Credit/Debit Card</label><br>
+						
+						
+						<label for="card-name">Name on Card:</label>
+						<input type="text" id="card-name" name="card-name" placeholder="JOHN SMITH" required><br>
+						
+						<label for="card-number">Card Number:</label>
+						<input type="text" id="card-number" name="card-number" placeholder="1234 5678 9101 1121" required><br>
+						
+						<label for="card-expiry">Expiry Date:</label>
+						<input type="month" id="card-expiry" name="card-expiry" required>
+						
+						<label for="card-cvv">CVV/CVC:</label>
+						<input type="text" id="card-cvv" name="card-cvv" placeholder="123" required><br><br>
+						
+						<input type="checkbox" id="save-card" name="save-card">
+						<label for="save-card">Save Card</label><br><br>
+						
+						<input type="submit" value="Add Card">
+						<input type="reset" value="Reset">
+					</form>
+				</div>
+
+				
+			</div>
+		</section>
+
+		<hr>
+		
+		<!-- footer section -->
+			<footer>
+				<p>Quick links</p>
+				<ul>
+					<li>Home</li>
+					<li>Products</li>
+					<li>Best Sellers</li>
+					<li>Favourites</li>
+					<li>Cart</li>
+				</ul>
+				<ul>
+					<li>Profile</li>
+					<li>Addresses</li>
+					<li>Orders</li>
+				</ul>
+			</footer>
+	</main>
+
+</body>
+</html>
