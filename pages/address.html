@@ -13,27 +13,31 @@
 		<header>
 			<nav>
 				<ul class="nav-bar">
-					<li><a href="../index.html">Home</a></li>
-					<li><a href="/pages/product-list.html">Products</a></li>
+				  <li><a href="../index.html">Home</a></li>
+				  <li><a href="/pages/product-list.html">Products</a>
+					<!-- Dropdown under Products -->
 					<ul class="dropdown">
-						<li><a href="#">Best Sellers</a></li>
-						<li><a href="#">Our Favourites</a></li>
+					  <li><a href="#">Best Sellers</a></li>
+					  <li><a href="#">Our Favourites</a></li>
 					</ul>
-					<li><a href="pages/user-profile.html">Profile</a></li>
-						<ul class="dropdown">
-						<li><a href="pages/shopping-cart.html">Cart</a></li>
-						<li><a href="#">Addresses</a></li>
-						<li><a href="#">Previous Orders</a></li>
-						</ul>
+				  </li>
+				  <li><a href="pages/user-profile.html">Profile</a>
+					<!-- Dropdown under Profile -->
+					<ul class="dropdown">
+					  <li><a href="pages/shopping-cart.html">Cart</a></li>
+					  <li><a href="pages/address.html">Addresses</a></li>
+					  <li><a href="pages/order-history.html">Previous Orders</a></li>
+					</ul>
+				  </li>
 				</ul>
-			</nav>
+			  </nav>
 		</header>
 
 
 		<section class="saved-address">
 			<h1>Your Saved Addresses</h1>
 			<div class="address-card">
-				<input type="radio" id="address-saved" name="address-used">
+				<input type="radio" id="address-saved" name="address-used" checked>
 				<h2>Address 1</h2>
 				<p>Home</p>
 				<p>St. Name & ###</p>

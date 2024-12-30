@@ -13,20 +13,24 @@
 		<header>
 			<nav>
 				<ul class="nav-bar">
-					<li><a href="../index.html">Home</a></li>
-					<li><a href="/pages/product-list.html">Products</a></li>
+				  <li><a href="../index.html">Home</a></li>
+				  <li><a href="./product-list.html">Products</a>
+					<!-- Dropdown under Products -->
 					<ul class="dropdown">
-						<li><a href="#">Best Sellers</a></li>
-						<li><a href="#">Our Favourites</a></li>
+					  <li><a href="#">Best Sellers</a></li>
+					  <li><a href="#">Our Favourites</a></li>
 					</ul>
-					<li><a href="pages/user-profile.html">Profile</a></li>
-						<ul class="dropdown">
-						<li><a href="pages/shopping-cart.html">Cart</a></li>
-						<li><a href="pages/address.html">Addresses</a></li>
-						<li><a href="#">Previous Orders</a></li>
-						</ul>
+				  </li>
+				  <li><a href="./user-profile.html">Profile</a>
+					<!-- Dropdown under Profile -->
+					<ul class="dropdown">
+					  <li><a href="./shopping-cart.html">Cart</a></li>
+					  <li><a href="./address.html">Addresses</a></li>
+					  <li><a href="./order-history.html">Previous Orders</a></li>
+					</ul>
+				  </li>
 				</ul>
-			</nav>
+			  </nav>
 		</header>
 
 		<section class="user-order">
@@ -57,11 +61,9 @@
 				</div>
 		  
 				<div class="payment-method card-form">
+					<input type="radio" id="payment-credit" name="payment-method" value="credit">
+					<label for="payment-credit">Credit/Debit Card</label><br><br>
 					<form>
-						<input type="radio" id="payment-credit" name="payment-method" value="credit">
-						<label for="payment-credit">Credit/Debit Card</label><br>
-						
-						
 						<label for="card-name">Name on Card:</label>
 						<input type="text" id="card-name" name="card-name" placeholder="JOHN SMITH" required><br>
 						
@@ -80,6 +82,7 @@
 						<input type="submit" value="Add Card">
 						<input type="reset" value="Reset">
 					</form>
+					<input id="place-order" type="submit" value="Place order">
 				</div>
 
 				
